@@ -1,0 +1,302 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #414141;
+    text-decoration: none;
+}
+
+body {
+    background-color: #414141;
+}
+
+:root {
+    --navbar-height: 4rem;
+    --header-height: 14rem;
+    --main-min-height: 240rem;
+}
+
+body {
+    height: 100vh;
+    min-width: 480;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    display: grid;
+    grid-template-rows: minmax(var(--navbar-height), auto) minmax(var(--main-min-height) 1fr) auto;
+}
+
+.topnav {
+    overflow: hidden;
+    padding: 0px 15px;  
+    height: var(--navbar-height);
+    color: white;
+}
+
+.topnav a {
+    font-size: 20;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 22px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    color:  #788ce2;
+  }
+  
+  .topnav a.active {
+    color: #788ce2;
+  }
+  
+  .topnav-right {
+    float: right;
+  }
+  
+  .row::after {
+    clear: both;
+    display: table;
+  }
+
+.copyright {
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    font-size: 15px;
+}
+
+.copyright-text {
+  color: white;
+}
+
+.footer-links {
+  position: absolute;
+  bottom: 5%;
+}
+
+.link-text {
+  position: absolute;
+  bottom: 10%;
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  position: relative;
+  left: 100%;
+}
+
+footer {
+  position: absolute;
+  bottom: 0%;
+  height: 300px;
+  width: 100%;
+  color: #fff;
+  background: #2c2c2c;
+}
+
+.welcome {
+  margin-top: -2.5rem;
+  width: 100%;
+  height: 35.5rem;
+  line-height: 1.8em;
+  margin-bottom: .4em;
+  padding: 0;
+  font-family: Helvetica;
+  font-weight: 600;
+  font-size: 1.5em;
+  color: #ffff;
+  text-transform: uppercase;
+}
+
+.centered-text {
+  position: relative;
+  margin-left: 25%;
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+
+.discord-logo {
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  display: inline-block;
+  padding: .6em 0;
+  background: url(images/Discord-Wordmark-White.png) center no-repeat;
+  background-size: contain;
+  font-size: 1em;
+}
+
+.head {
+  margin-bottom: .4em;
+  padding: 0;
+  line-height: 1.4;
+  font-weight: 600;
+  font-size: 2em;
+}
+
+.body {
+  position: relative;
+  margin-left: 24.5%;
+  margin: 0 auto 1em;
+  text-transform: inherit;
+  opacity: 85%;
+}
+
+.search-box {
+  position: absolute;
+  top: 90%;
+  left: 18%;
+  background: #2c2c2c;
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+}
+
+.search-box:hover > .search-txt{
+  width: 260px;
+  padding: 0 6px;
+}
+
+.search-btn {
+  color: white;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.search-box:hover > .search-btn {
+  background: white;
+  color: black;
+}
+
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+}
+
+.navbar-servers {
+  color: white;
+  float: right;
+}
+
+.title-right {
+  position: absolute;
+  margin-top: -50px;
+  right: 25%;
+}
+.title {
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 10%;
+    font-size: 2em;
+  }
+
+body {
+  color: #e6e6e6;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+h1{
+  position: absolute;
+  left: 42%;
+  top: 10%;
+}
+
+.last-modified {
+  position: absolute;
+  left: 40.6%;
+  top: 17%;
+}
+
+.terms-of-service-align {
+  position: absolute;
+  left: 1%;
+  top: 25%;
+}
+
+.site-footer .site-footer--container, .site-footer .site-footer--extra {
+  max-width: 1264px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 32px 12px 12px 12px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.site-footer--container, .site-footer--extra {
+  max-width: 1264px;
+}
+
+.site-footer, .site-footer *, .site-footer *:before, .site-footer *:after {
+  box-sizing: border-box;
+}
+
+h5, h6 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+.site-footer {
+  background-color: #242729;
+  background-image: none;
+  background-position: top left;
+  background-repeat: no-repeat;
+  border-top: 0;
+  background-size: auto;
+  color: #6a737c;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.discord {
+    color: #788ce2;
+    font-weight: 800;
+}
+
+
+.hidden {
+    position: absolute;
+    top: 520%;
+    height: 0px;
+    opacity: 0%;
+}
+
+.main-header {
+    position: absolute;
+    left: 41%;
+}
+
+.all {
+    position: relative;
+    top: 10%;
+    padding-left: 28%;
+    font-size: 20px;
+}
